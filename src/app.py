@@ -5,7 +5,7 @@ app = Flask(__name__)
 def home():
     return jsonify({
         "message": "Welcome to the DevOps Kubernetes Project",
-        "version": "1.0"
+        "version": "2.0"
     })
 
 
@@ -19,9 +19,9 @@ def users():
     return jsonify([
         {"id": 1, "name": "sunny"},
         {"id": 2, "name": "sandy"},
-        {"id": 3, "name": "sony"}
+        {"id": 3, "name": "sony"},
+        {"id": 4, "name": "sandeep"}
     ])
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
